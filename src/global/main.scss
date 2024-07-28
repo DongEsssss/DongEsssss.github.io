@@ -11,11 +11,16 @@ body {
 }
 
 #app {
-    position: relative;
+  position: relative;
 }
 
-main{
-    flex-grow: 1;
+section {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: auto;
+}
 
-    height: calc(100vh - 240px);
+main {
+  flex-grow: 1;
+  height: calc(100vh - 240px);
 }

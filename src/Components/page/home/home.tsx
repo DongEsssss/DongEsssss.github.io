@@ -3,7 +3,9 @@ import React from 'react'
 export default function Home() {
   return (
     <main>
-      asd
+      <section>
+        asdasd
+      </section>
     </main>
   )
 }

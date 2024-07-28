@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import AuthorizingRouter from './Components/router/AuthorizingRouter';
+import '../src/service/i18next'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

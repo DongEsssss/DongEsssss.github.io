@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export const Footer = () => {
+  const {t }= useTranslation();
   return (
-    <div>Footer</div>
+    <div>{t('title')}</div>
   )
 }

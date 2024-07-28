@@ -5,7 +5,7 @@ import AuthorizingRouter from './Components/router/AuthorizingRouter';
 import '../src/service/i18next'
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('app') as HTMLElement
 );
 root.render(
   <React.StrictMode>

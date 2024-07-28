@@ -1,11 +1,11 @@
-import React from 'react'
+import './header.scss'
 import LangeBtn from '../langtoggle'
 
 export const Header = () => {
   return (
-    <>
-    <div>Header</div>
-    <LangeBtn />
-    </>
+    <header>
+      <div>Header</div>
+      <LangeBtn />
+    </header>
   )
 }

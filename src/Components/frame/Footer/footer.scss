@@ -1,0 +1,29 @@
+footer {
+    height: 160px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 20px;
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+            color: white;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    h6 {
+        font-size: 16px !important;
+        color: rgb(221, 221, 221);
+    }
+}

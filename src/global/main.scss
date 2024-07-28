@@ -1,3 +1,21 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  word-break: keep-all;
+}
+
+#app {
+    position: relative;
+}
+
 main{
-    background-color: white;
+    flex-grow: 1;
+
+    height: calc(100vh - 240px);
 }

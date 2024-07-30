@@ -5,10 +5,8 @@ import { useTranslation } from 'react-i18next'
 //icon
 import { FaInstagram, FaGithub } from "react-icons/fa";
 import { SiTistory } from "react-icons/si";
-import { useNavigate, useNavigation } from 'react-router-dom';
 
 export const Footer = () => {
-  const { t } = useTranslation();
 
   //my sns links
   const gitpage = 'https://github.com/DongEsssss'

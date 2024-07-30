@@ -1,7 +1,8 @@
+import './lang.scss'
 import { useEffect, useState } from 'react'
 import store from 'store'
 //캐시로 사용자가 정해놨던 언어 설정 불러옴
-import i18n from '../../../service/i18next'
+import i18n from '../../service/i18next'
 
 const storedLang = store.get('wanted.language') || 'EN'
 
@@ -18,9 +19,12 @@ const LangeBtn = () => {
   }
 
   return (
-    <button type='button' onClick={handleLangClick}>
-      {lang}
-    </button>
+    <>
+      <input type="checkbox" id="chk1"
+        style={{ visibility: 'hidden' }}
+        onClick={handleLangClick} />
+      <label htmlFor="chk1"></label>
+    </>
   )
 }
 

@@ -1,0 +1,48 @@
+label {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 22px;
+    background: #d3d3d3;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+
+label::after {
+    content: "";
+    position: absolute;
+    left: 2.5px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #fff;
+    transform: translateY(-50%);
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+
+label::before {
+    content: "KR";
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.4s;
+}
+
+#chk1:checked+label {
+    background: rgba(109, 104, 107)
+}
+
+#chk1:checked+label::after {
+    left: calc(100% - 21.5px);
+}
+
+#chk1:checked+label::before {
+    content: "EN";
+    color: #fff;
+    left: 15px;
+}

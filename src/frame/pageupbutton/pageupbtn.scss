@@ -1,0 +1,13 @@
+.scroll__pageupbtn {
+    width: 30px !important;
+    min-width: 30px !important;
+    position: fixed !important;
+    right: 20px;
+    bottom: 50px;
+    height: 30px;
+    border-radius: 50%;
+
+    background-color: white;
+
+    z-index: 9999;
+}

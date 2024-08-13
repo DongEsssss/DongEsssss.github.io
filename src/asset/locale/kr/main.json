@@ -1,3 +1,10 @@
 {
-    "title": "DongGyun's Portfolio"
+    "title": "DongGyun's Portfolio",
+    "pages": {
+        "intro": "소개",
+        "aboutme": "나에 대해서",
+        "skill": "나의 기술",
+        "project": "프로젝트",
+        "career": "커리어"
+    }
 }

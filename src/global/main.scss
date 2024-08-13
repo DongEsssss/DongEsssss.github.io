@@ -1,8 +1,8 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  color: black;
+  margin: 0 auto !important;
+  background-color: black;
+  color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -11,16 +11,18 @@ body {
 }
 
 #app {
-  position: relative;
+  font-family: 'Pretendard Variable' !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  white-space: pre-line !important;
 }
 
 section {
-  max-width: 1200px !important;
-  width: 100% !important;
-  margin: auto;
-}
-
-main {
-  flex-grow: 1;
-  height: calc(100vh - 240px);
+  max-width: 1350px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

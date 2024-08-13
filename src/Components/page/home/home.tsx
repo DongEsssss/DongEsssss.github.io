@@ -1,19 +1,18 @@
 import UseTool from '../usetool'
 import Intro from '../intro'
-import Resume from '../resume'
+// import Resume from '../resume'
 import Project from '../project'
-import Archiving from '../archiving/archiving'
+import Skill from '../skill/skill'
+
 
 export default function Home() {
   return (
     <main>
-      <section>
-        <Intro />
-        <UseTool />
-        <Archiving />
-        <Project />
-        <Resume />
-      </section>
+      <Intro />
+      <UseTool />
+      <Skill />
+      <Project />
+      {/* <Resume /> */}
     </main>
   )
 }

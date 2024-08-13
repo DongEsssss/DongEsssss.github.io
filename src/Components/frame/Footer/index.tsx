@@ -1,6 +1,5 @@
 import { Box, Typography } from '@mui/material';
 import './footer.scss'
-import { useTranslation } from 'react-i18next'
 
 //icon
 import { FaInstagram, FaGithub } from "react-icons/fa";
@@ -27,7 +26,7 @@ export const Footer = () => {
             <SiTistory onClick={() => window.open(`${tistorypage}`)} />
           </div>
         </div>
-        <Typography variant='h6'>Copyright ⓒ 2024. DongGyun All rights reserved.</Typography>
+        <Typography variant='body2'>Copyright ⓒ 2024. DongGyun All rights reserved.</Typography>
       </Box>
     </footer>
   )

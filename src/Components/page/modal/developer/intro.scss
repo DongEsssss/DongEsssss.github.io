@@ -1,0 +1,138 @@
+.intro-section {
+    margin: 0px auto !important;
+    min-height: calc(100vh - 200px);
+    overflow: hidden;
+    /* 전체적인 오버플로우 방지 */
+
+    .intro-text {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+        /* 요소가 나타날 때 부드러운 페이드 인 효과 */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            margin: 0;
+            padding: 5px 0;
+
+            .li-title {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .developer-img {
+        opacity: 0.7;
+        position: relative;
+        margin-left: 20px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        max-height: 70vh;
+        background-size: cover;
+        background-attachment: fixed;
+        object-fit: cover;
+        transition: transform 0.5s ease, filter 0.5s ease;
+        /* 이미지의 전환 효과 */
+    }
+
+    .developer-img:hover {
+        transform: scale(1.1);
+        filter: grayscale(50%);
+        /* 마우스 오버 시 확대 및 흑백 효과 */
+    }
+
+    .chip {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 20px;
+
+        .intro-chip {
+            background-color: #e8e8e8;
+            color: black;
+            margin: 0 10px 10px 0;
+            font-weight: bolder;
+            font-size: 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* 배경 및 글자 색상 전환 효과 */
+        }
+
+        .intro-chip:hover {
+            background-color: #c8c8c8;
+            color: white;
+            /* 마우스 오버 시 색상 변경 */
+        }
+    }
+}
+
+// @media (max-width: 1000px) {
+//     .intro-section {
+//         padding: 30px 10px;
+
+//         .intro-text {
+//             flex-direction: column;
+//             grid-template-columns: 1fr;
+
+//             .developer-img {
+//                 display: none;
+//                 /* 이미지 숨기기 */
+//             }
+//         }
+//     }
+
+
+//     .chip {
+//         justify-content: center;
+//         /* 작은 화면에서 가운데 정렬 */
+//     }
+// }
+
+@media (max-width: 1000px) {
+    .intro-section {
+        .intro-text {
+            flex-direction: column;
+            grid-template-columns: 1fr;
+            align-items: center;
+
+            ul {
+                margin: 0 10px;
+            }
+        }
+    }
+
+
+    .developer-img {
+        margin-left: 0;
+        max-width: 100%;
+        display: none;
+        /* 이미지 너비 전체 사용 */
+    }
+
+    .chip {
+        .intro-chip {
+            margin: 5px 5px;
+            font-size: 13px;
+            /* 작은 화면에서 글자 크기 조정 */
+        }
+    }
+}

@@ -34,7 +34,7 @@ function Pageupbtn() {
     return (
         <div>
             {ShowButton && (
-                <Button id='top' className='scroll__pageupbtn' onClick={ScrollToTop}>
+                <Button id='top' className='scroll__pageupbtn' onClick={ScrollToTop} >
                     <ArrowUpwardIcon />
                 </Button>
             )}

@@ -1,0 +1,50 @@
+.start-section {
+    position: relative;
+    padding: 0;
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .arrow-down {
+        position: absolute;
+        text-align: center;
+        bottom: 100px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+
+        .arrow-icon {
+            font-size: 40px;
+            color: #ffd700;
+            animation: colorBlink 1s infinite, pulse 1s infinite alternate;
+            font-weight: 400;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        .arrow-down.hidden {
+            opacity: 0;
+        }
+    }
+
+}
+
+@keyframes colorBlink {
+
+    0%,
+    100% {
+        color: #444444;
+    }
+
+    50% {
+        color: #FFFFFF;
+    }
+}

@@ -2,12 +2,15 @@
     width: 30px !important;
     min-width: 30px !important;
     position: fixed !important;
-    right: 20px;
-    bottom: 50px;
+    right: 100px;
+    bottom: 30px;
     height: 30px;
-    border-radius: 50%;
-
-    background-color: white;
-
+    background-color: white !important;
     z-index: 9999;
+}
+
+@media (max-width:1350px) {
+    .scroll__pageupbtn {
+        right: 10px;
+    }
 }

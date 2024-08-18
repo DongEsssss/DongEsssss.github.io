@@ -1,28 +1,126 @@
 html,
 body {
   margin: 0 auto !important;
-  background-color: black;
+  padding: 0px !important;
+  background-color: rgb(2, 2, 2);
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   word-break: keep-all;
+  overflow: hidden;
+  // cursor: none;
+  height: initial;
+  position: relative;
+  overflow: visible;
+  overflow-x: hidden !important;
+}
+
+main {
+  flex: 1 0 auto;
+  overflow-y: auto;
+  /* 필요한 경우 사용 */
+}
+
+body.modal-open {
+  overflow-y: scroll !important;
+  /* 강제로 스크롤바 유지 */
+}
+
+.headerdivider {
+  height: 70px;
 }
 
 #app {
-  font-family: 'Pretendard Variable' !important;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  white-space: pre-line !important;
+}
+
+main {
+  padding: 0px;
 }
 
 section {
-  max-width: 1350px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px;
+}
+
+.scroll-container {
+  overflow-y: auto;
+}
+
+.snap-section {
+
+  scroll-snap-align: start;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.snap-section h1 {
+  font-size: 3em;
+  color: white;
+}
+
+.first-snap {
+  min-height: calc(100vh - 80px);
+  transition: background 0.5s ease;
+  background: linear-gradient(180deg, #141414, #000000);
+}
+
+.second-snap {
+  background: linear-gradient(0deg, #141414, #000000);
+}
+
+.third-snap {
+  background: linear-gradient(180deg, #141414, #000000);
+}
+
+.fourth-snap {
+  background: linear-gradient(180deg, #141414, #000000);
+}
+
+.sixth-snap {
+  background: linear-gradient(0deg, #141414, #000000);
+}
+
+.seven-snap {
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 0.25) 5%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.75) 75%,
+      rgba(0, 0, 0, 1) 100%), url('../../src/asset/image/black.jpg');
+  background-size: cover;
+  object-fit: cover;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  overflow-y: hidden;
+
+  .footer {
+    width: 100%;
+    background-color: black;
+  }
+}
+
+
+.title {
+  text-align: center;
+  font-size: 4rem !important;
+}
+
+@media (max-width: 600px) {
+  .arrow-icon {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 4rem !important;
+  }
+
+  .scroll-hide {
+    height: 50px;
+  }
 }

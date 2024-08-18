@@ -1,19 +1,20 @@
-import { Outlet } from "react-router-dom";
-import { Header } from "./frame/Header";
-import { Footer } from "./frame/Footer";
 import '../global/main.scss'
+import { Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+// web-frame
 import Pageupbtn from "../frame/pageupbutton/pageupbtn";
+import CustomCursor from "../frame/customcursor";
 
 function Main() {
   document.title = useTranslation().t("title")
   return (
-    <>
-      <Header />
-      <Pageupbtn />
+    <main>
       <Outlet />
-      <Footer />
-    </>
+      {/* frame */}
+      <CustomCursor />
+      <Pageupbtn />
+    </main>
   );
 }
 

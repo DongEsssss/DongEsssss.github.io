@@ -1,29 +1,15 @@
 footer {
-    height: 120px;
-    background-color: #222;
+    max-width: 450px;
+    height: 105px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    .nav-item {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 20px;
-
-        .icon {
-            display: flex;
-            justify-content: center;
-            font-size: 30px;
-            color: white;
-
-            &:hover {
-                opacity: 0.7;
-            }
-        }
-    }
+    align-items: center;
+    border-top: 5px solid white;
 
     h6 {
-        font-size: 16px !important;
-        color: rgb(221, 221, 221);
+        font-size: 25px !important;
+        font-weight: 800 !important;
+        color: black;
     }
 }

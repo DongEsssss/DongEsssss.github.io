@@ -1,0 +1,14 @@
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(190, 190, 190, 0.7);
+    /* Red color with opacity */
+    border-radius: 50%;
+    pointer-events: none;
+    /* Cursor cannot be clicked */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+}

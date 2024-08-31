@@ -1,36 +1,41 @@
+import React from 'react';
 import './intro.scss';
-import { Box, Button, Typography, Modal } from '@mui/material';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Slide } from '@mui/material';
+import { TransitionProps } from '@mui/material/transitions';
 
-const style = {
-    position: 'absolute' as 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 1000,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-};
-
-interface IntroProps {
+interface DialogProps {
     open: boolean;
     onClose: () => void;
 }
 
-const Intro = ({ open, onClose }: IntroProps) => {
+const Transition = React.forwardRef(function Transition(
+    props: TransitionProps & {
+        children: React.ReactElement<any, any>;
+    },
+    ref: React.Ref<unknown>,
+) {
+    return <Slide direction="right" ref={ref} {...props} />;
+});
+
+
+const Intro = ({ open, onClose }: DialogProps) => {
     return (
-        <Modal open={open} onClose={onClose}>
-            <Box sx={style}>
-                <Typography id="transition-modal-title" variant="h6" component="h2">
-                    Text in a modal
-                </Typography>
-                <Button onClick={onClose}>Close</Button>
-                <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                </Typography>
-            </Box>
-        </Modal>
+        <Dialog open={open} keepMounted TransitionComponent={Transition}
+            onClose={onClose}
+            aria-describedby="alert-dialog-slide-description"
+        >
+            <DialogTitle>{"Use Google's location service?"}</DialogTitle>
+            <DialogContent>
+                <DialogContentText id="alert-dialog-slide-description">
+                    Let Google help apps determine location. This means sending anonymous
+                    location data to Google, even when no apps are running.
+                </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+                <Button onClick={onClose}>Disagree</Button>
+                <Button onClick={onClose}>Agree</Button>
+            </DialogActions>
+        </Dialog>
     );
 }
 

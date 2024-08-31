@@ -1,5 +1,5 @@
 import './aboutme.scss'
-import { Box, Button, Divider, Modal, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 
 //icon
 import { FaUserCircle } from "react-icons/fa";
@@ -8,27 +8,25 @@ import { IoHome } from "react-icons/io5";
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaUniversity } from "react-icons/fa";
-import { useEffect, useState } from 'react';
+import React from 'react';
 import Intro from '../modal/intro';
 import Developer from '../modal/developer';
 
 const AboutME = () => {
-    const [intro, setIntro] = useState(false)
-    const introModal = () => setIntro(true)
-    const closeintroModal = () => setIntro(false)
-
-    const [developer, setDeveloper] = useState(false)
-    const DeveloperModal = () => setDeveloper(true)
-    const closedeveloperModal = () => setDeveloper(false)
-
-    useEffect(() => {
-        if (intro || developer) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
-    }, [intro, developer]);
-
+    const [introModal, setintroModal] = React.useState(false);
+    const intromodalopen = () => {
+        setintroModal(true);
+    }
+    const intromodalclose = () => {
+        setintroModal(false);
+    }
+    const [developerModal, setdeveloperModal] = React.useState(false);
+    const developermodalopen = () => {
+        setdeveloperModal(true);
+    }
+    const developermodalclose = () => {
+        setdeveloperModal(false);
+    }
     return (
         <><section className='aboutmebox'>
             <Box>
@@ -81,12 +79,13 @@ const AboutME = () => {
                     </Box>
                 </div>
                 <div className="intro-btn">
-                    <Button variant='contained' fullWidth onClick={introModal}>나는 어떤 사람인가</Button>
-                    <Button variant='contained' fullWidth onClick={DeveloperModal}>어떤 개발자를 꿈꾸는가?</Button>
+                    <Button variant='contained' onClick={intromodalopen}>나는 어떤 사람인가?</Button>
+                    <Button variant='contained' onClick={developermodalopen}>어떤 개발자를 꿈꾸는가?</Button>
                 </div>
             </Box>
         </section>
-            <Intro open={intro} onClose={closeintroModal} /><Developer open={developer} onClose={closedeveloperModal} />
+            <Intro open={introModal} onClose={intromodalclose} />
+            <Developer open={developerModal} onClose={developermodalclose} />
         </>
     )
 }

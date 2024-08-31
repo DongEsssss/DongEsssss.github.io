@@ -1,5 +1,4 @@
 import Start from '../start'
-import Intro from '../modal/intro';
 // import Resume from '../resume'
 import Project from '../project'
 import TechStack from '../TechStack'

@@ -4,6 +4,7 @@ import Project from '../project'
 import TechStack from '../TechStack'
 import AboutME from '../aboutme';
 import Contact from '../contact';
+import Archive from '../archive';
 
 
 
@@ -52,6 +53,9 @@ export default function Home() {
           <Project />
         </div>
         <div className="snap-section fifth-snap" >
+          <Archive />
+        </div>
+        <div className="snap-section last-snap" >
           <Contact />
         </div>
       </div >

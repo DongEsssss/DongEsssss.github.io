@@ -1,23 +1,29 @@
-.box {
-    &:hover {
-        transform: translateY(10px);
-    }
+.tech-section {
+    .stack-box {
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        gap: 20px;
 
-}
+        .box {
+            width: 100%;
+            max-width: 800px;
+            min-width: 400px;
 
-.skill_box {
-    padding: 10px;
-    width: 17em;
-    background-color: white;
-    color: black;
-    margin: 10px 10px;
-    border-radius: 15px;
-    cursor: pointer;
+            .skill-box {
+                margin: 10px;
+                padding: 10px;
+                background-color: #ccc;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
 
-
-    h6 {
-        font-weight: bold;
-        padding: 10px;
-        border-bottom: 1px solid gray;
+                .skill-box:hover .description {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
     }
 }

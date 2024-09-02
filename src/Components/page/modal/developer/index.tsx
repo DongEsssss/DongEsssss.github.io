@@ -31,7 +31,7 @@ function MyDialog({ open, onClose }: DialogProps) {
                     position: 'absolute',
                     right: 0,
                     top: 0,
-                    margin: 2,
+                    margin: '20px 0px',
                     maxWidth: '800px',
                     minWidth: '400px',
                     width: '100%',

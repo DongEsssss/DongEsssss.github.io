@@ -1,0 +1,14 @@
+{
+    "version_control": [
+        {
+            "name": "Git",
+            "color": "#F05032",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/git.svg"
+        },
+        {
+            "name": "Github",
+            "color": "#ffffff",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg"
+        }
+    ]
+}

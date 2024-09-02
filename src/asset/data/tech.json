@@ -2,31 +2,38 @@
     "technologies": [
         {
             "name": "HTML",
-            "color": "#E34F26"
+            "color": "#E34F26",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/html5.svg"
         },
         {
             "name": "CSS",
-            "color": "#1572B6"
+            "color": "#1572B6",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/css3.svg"
         },
         {
             "name": "Sass",
-            "color": "#CC6699"
+            "color": "#CC6699",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/sass.svg"
         },
         {
             "name": "Tailwind CSS",
-            "color": "#38B2AC"
+            "color": "#38B2AC",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tailwindcss.svg"
         },
         {
             "name": "JavaScript",
-            "color": "#F7E018"
+            "color": "#F7E018",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/javascript.svg"
         },
         {
             "name": "TypeScript",
-            "color": "#3178C6"
+            "color": "#3178C6",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/typescript.svg"
         },
         {
             "name": "React",
-            "color": "#61DAFB"
+            "color": "#61DAFB",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/react.svg"
         }
     ]
 }

@@ -35,7 +35,7 @@ const Archive = () => {
                         <div className="icon-description">
                             <a href="https://developer-donge.tistory.com/">https://developer-donge.tistory.com/</a>
                             <Typography sx={{ fontWeight: 'bold', margin: '10px 0px' }}>
-                                공부 및 지식 공유, 피드백을 목적으로 둔 블로그
+                                공부 및 지식 공유
                             </Typography>
                             <li>공부한 것을 나의 것으로 만들기 위한 기록</li>
                             <li>개발자의 길을 걸으며 공부한 개발 관련 지식 정리</li>

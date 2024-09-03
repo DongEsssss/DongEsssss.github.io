@@ -48,6 +48,8 @@ main {
 }
 
 section {
+  margin: 0 auto;
+  min-height: calc(100vh - 0px); 
   max-width: 1200px;
   margin: auto;
   padding: 30px;

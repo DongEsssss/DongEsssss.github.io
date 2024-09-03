@@ -1,10 +1,4 @@
 .tech-section {
-    margin: 0 auto;
-    min-height: calc(100vh - 0px); // 섹션의 최소 높이를 뷰포트 높이에 맞춤
-    display: flex;
-    align-items: center; // 섹션을 수직 중앙에 배치
-    justify-content: center; // 섹션을 수평 중앙에 배치
-
     .stack-box {
         display: flex;
         flex-wrap: wrap;

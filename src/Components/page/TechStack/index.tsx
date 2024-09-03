@@ -67,7 +67,7 @@ const TechStack = () => {
             </div>
           ))}
         </div>
-        <Typography fontSize={20} fontWeight={1000}>
+        <Typography fontSize={25} fontWeight={1000}>
           DataBase
         </Typography>
         <div className="box">
@@ -111,7 +111,7 @@ const TechStack = () => {
           ))}
         </div>
       
-        <Typography fontSize={20} fontWeight={1000}>
+        <Typography fontSize={25} fontWeight={1000}>
           Version-Control
         </Typography>
         <div className="box">

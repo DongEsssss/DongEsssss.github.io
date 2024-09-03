@@ -8,7 +8,6 @@ import { SiTistory } from "react-icons/si";
 
 
 const Contact = () => {
-
     const gitpage = 'https://github.com/DongEsssss'
     const instagrampage = 'https://www.instagram.com/dong_punch'
     const tistorypage = 'https://developer-donge.tistory.com/'

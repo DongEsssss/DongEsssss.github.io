@@ -3,37 +3,50 @@
         {
             "name": "HTML",
             "color": "#E34F26",
-            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/html5.svg"
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/html5.svg",
+            "description": "시맨틱 태그와 웹 표준을 이해했습니다."
         },
         {
             "name": "CSS",
             "color": "#1572B6",
-            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/css3.svg"
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/css3.svg",
+            "description": "스타일링과 레이아웃의 원리를 익혔습니다."
         },
         {
             "name": "Sass",
             "color": "#CC6699",
-            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/sass.svg"
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/sass.svg",
+            "description": "CSS 전처리기와 모듈화를 이해했습니다."
         },
         {
             "name": "Tailwind CSS",
             "color": "#38B2AC",
-            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tailwindcss.svg"
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tailwindcss.svg",
+            "description": "유틸리티 중심의 CSS 접근법을 배웠습니다."
         },
         {
             "name": "JavaScript",
             "color": "#F7E018",
-            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/javascript.svg"
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/javascript.svg",
+            "description": "동적 웹 개발과 ES6+ 문법에 익숙해졌습니다."
         },
         {
             "name": "TypeScript",
             "color": "#3178C6",
-            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/typescript.svg"
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/typescript.svg",
+            "description": "정적 타입 시스템과 타입 안전성을 이해했습니다."
         },
         {
             "name": "React",
             "color": "#61DAFB",
-            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/react.svg"
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/react.svg",
+            "description": "컴포넌트 기반 아키텍처와 상태 관리를 익혔습니다."
+        },
+        {
+            "name": "Redux",
+            "color": "#764ABC",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/redux.svg",
+            "description": "상태 관리를 위한 예측 가능한 상태 컨테이너로, 애플리케이션의 상태를 중앙에서 관리합니다."
         }
     ]
 }

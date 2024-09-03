@@ -1,18 +1,21 @@
 .tech-section {
+    margin: 0 auto;
+    min-height: calc(100vh - 0px); // 섹션의 최소 높이를 뷰포트 높이에 맞춤
+    display: flex;
+    align-items: center; // 섹션을 수직 중앙에 배치
+    justify-content: center; // 섹션을 수평 중앙에 배치
+
     .stack-box {
         display: flex;
-        flex: 1 1 auto;
         flex-wrap: wrap;
         gap: 20px;
         position: relative;
-        overflow: hidden;
-        /* 박스가 확장할 공간을 확보 */
 
         .box {
             width: 100%;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
+            gap: 10px;
 
             .stackItem {
                 position: relative;
@@ -25,6 +28,7 @@
                 align-items: flex-start;
                 width: 100%;
                 height: 60px;
+                border-radius: 16px;
                 box-sizing: border-box;
                 overflow: hidden;
                 transition: height 0.7s ease;
@@ -47,23 +51,17 @@
                     white-space: normal;
                     opacity: 0;
                     overflow: hidden;
-                    transition: opacity 0.3s ease, transform 0.3s ease;
+                    transition: opacity 1s ease, transform 1s ease;
                     transform: translateY(10px);
-                    /* 기본 상태에서 아래로 약간 이동 */
-                    width: calc(100% - 20px);
-                    /* 여백을 고려한 너비 설정 */
                 }
 
                 &:hover {
                     z-index: 10;
-                    height: 200px;
-                    /* 마우스 오버 시 높이 확장 */
-                }
+                    height: 100%;                }
 
                 &:hover .description {
                     opacity: 1;
                     transform: translateY(0);
-                    /* 설명이 기본 위치로 이동 */
                 }
             }
         }

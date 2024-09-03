@@ -22,6 +22,10 @@
             border-radius: 15px;
             padding: 15px;
 
+            &:hover{
+                transform: scale(1.01);
+            }
+
             .icon-item,
             .icon-description {
                 text-align: center;

@@ -30,12 +30,12 @@ const Intro = ({ open, onClose }: DialogProps) => {
             sx={{
                 '& .MuiDialog-paper': {
                     position: 'absolute',
-                    left: 0,
+                    right: 0,
                     top: 0,
-                    margin: '20px 0px',
+                    margin: '20px 10px',
                     maxWidth: '800px',
                     minWidth: '400px',
-                    width: '100%',
+                    width: '95%',
                     height: '95vh',
                     zIndex: (theme) => theme.zIndex.drawer + 1, // Ensure it's on top
                     overflow: 'auto', // Allow scrolling within the dialog
@@ -53,7 +53,7 @@ const Intro = ({ open, onClose }: DialogProps) => {
             <DialogContent sx={{ padding: '0px 24px' }}>
                 <DialogContentText id="alert-dialog-slide-description">
                     <Typography variant='h6' sx={{ fontFamily: 'initial', fontWeight: 'bold' }}>" 도전하는 자가 아름답다. "</Typography>
-                    <img src={challenge_img} style={{ width: '550px', margin: '10px auto', display: 'flex', justifyContent: 'center' }} />
+                    <img src={challenge_img}style={{ maxWidth: '550px',minWidth:'350px',width:'100%', margin: '10px auto', display: 'flex', justifyContent: 'center' }} />
                     <Typography variant='body2' sx={{ margin: '20px 0px' }}>
                         이 말을 어느 영상 매체에서 보고 나서 어떠한 목표가 있다면 늘 도전하는 저에게 정말 도움과 열정을 주는 문장이었습니다.
                         어떤 목표를 만들면 저는 늘 그것에 대해서 도전했습니다. 늘 실패뿐인 도전들이었습니다. 늘 실패만 하였기 때문에 도전을 포기하고 남들이 하는 것을 따라 하는 시도 있었습니다. 하지만 그것은 제 인생에 있어서 가장 지루하고 재미없는 시간이었다는 것을 깨닫게 되었습니다.

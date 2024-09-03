@@ -1,27 +1,21 @@
-import { Icon, Typography } from "@mui/material";
-import tech_skill from '../../../asset/data/tech.json';
-import version_control from '../../../asset/data/version.json'
-import './TechStack.scss';
+import { Divider, Typography } from "@mui/material";
+import tech_skill from "../../../asset/data/tech.json";
+import version_control from "../../../asset/data/version.json";
+import database_control from "../../../asset/data/database.json";
+import "./TechStack.scss";
 import { useState, useEffect } from "react";
+import { Database, Technology, Version } from "../../../type/@types";
 
-interface Technology {
-  name: string;
-  color: string;
-  icon: string;
-}
-interface Version {
-  name: string;
-  color: string;
-  icon: string;
-}
 
 const TechStack = () => {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
   const [versioncontrol, setVersionControl] = useState<Version[]>([]);
+  const [databasecontrol, setDatabaseControl] = useState<Database[]>([]);
 
   useEffect(() => {
     setTechnologies(tech_skill.technologies);
     setVersionControl(version_control.version_control);
+    setDatabaseControl(database_control.database_control);
   }, []);
 
   return (
@@ -40,21 +34,83 @@ const TechStack = () => {
               className="stackItem" // 일반 클래스 적용
               style={{ backgroundColor: item.color }}
             >
-              <Typography variant="body1" width={'200px'} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', fontWeight: 'bold' }}>
+              <Typography
+                variant="body1"
+                width={"200px"}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  fontWeight: "bold",
+                }}
+              >
                 <img
                   src={item.icon}
                   alt={item.name}
-                  style={{ width: '40px', height: '40px', marginRight: '10px', color: 'white' }}
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    marginRight: "10px",
+                    color: "white",
+                  }}
                 />
                 {item.name}
               </Typography>
               <div className="description">
-                <hr />
-                이렇게 이해했다
+                <Divider
+                  sx={{ margin: "10px 0px", backgroundColor: "black" }}
+                />
+                <Typography variant="body2" fontWeight={600}>
+                  {item.description}
+                </Typography>
               </div>
             </div>
           ))}
         </div>
+        <Typography fontSize={20} fontWeight={1000}>
+          DataBase
+        </Typography>
+        <div className="box">
+          {databasecontrol.map((item, index) => (
+            <div
+              key={index}
+              className="stackItem" // 일반 클래스 적용
+              style={{ backgroundColor: item.color }}
+            >
+              <Typography
+                variant="body1"
+                width={"200px"}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  fontWeight: "bold",
+                }}
+              >
+                <img
+                  src={item.icon}
+                  alt={item.name}
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    marginRight: "10px",
+                    color: "white",
+                  }}
+                />
+                {item.name}
+              </Typography>
+              <div className="description">
+                <Divider
+                  sx={{ margin: "10px 0px", backgroundColor: "black" }}
+                />
+                <Typography variant="body2" fontWeight={600}>
+                  {item.description}
+                </Typography>
+              </div>
+            </div>
+          ))}
+        </div>
+      
         <Typography fontSize={20} fontWeight={1000}>
           Version-Control
         </Typography>
@@ -65,17 +121,35 @@ const TechStack = () => {
               className="stackItem" // 일반 클래스 적용
               style={{ backgroundColor: item.color }}
             >
-              <Typography variant="body1" width={'200px'} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', fontWeight: 'bold' }}>
+              <Typography
+                variant="body1"
+                width={"200px"}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  fontWeight: "bold",
+                }}
+              >
                 <img
                   src={item.icon}
                   alt={item.name}
-                  style={{ width: '40px', height: '40px', marginRight: '10px', color: 'white' }}
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    marginRight: "10px",
+                    color: "white",
+                  }}
                 />
                 {item.name}
               </Typography>
               <div className="description">
-                <hr />
-                이렇게 이해했다
+                <Divider
+                  sx={{ margin: "10px 0px", backgroundColor: "black" }}
+                />
+                <Typography variant="body2" fontWeight={600}>
+                  {item.description}
+                </Typography>
               </div>
             </div>
           ))}

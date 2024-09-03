@@ -2,7 +2,7 @@ html,
 body {
   margin: 0 auto !important;
   padding: 0px !important;
-  background-color: rgb(2, 2, 2);
+  background-color: rgb(0, 0, 0);
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
@@ -77,23 +77,7 @@ section {
 .first-snap {
   min-height: calc(100vh - 80px);
   transition: background 0.5s ease;
-  background: linear-gradient(180deg, #141414, #000000);
-}
-
-.second-snap {
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.25) 5%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.75) 75%,
-      rgba(0, 0, 0, 1) 100%);
-}
-
-.fifth-snap {
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.25) 5%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.75) 75%,
-      rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(180deg, #000000, #000000);
 }
 
 .last-snap {

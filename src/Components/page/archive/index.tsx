@@ -7,12 +7,14 @@ import { SiTistory } from "react-icons/si";
 
 
 const Archive = () => {
+    const gitpage = 'https://github.com/DongEsssss'
+const tistorypage = 'https://developer-donge.tistory.com/'
     return (
         <section className='archive-section'>
             <div className="archive">
                 <Typography className='title' fontSize={50} fontWeight={1000}>Archive</Typography>
                 <div className="archive-box">
-                    <Box className="box">
+                    <div className="box" onClick={() => window.open(`${gitpage}`)}>
                         <div className='icon-item'>
                             <FaGithub className="icon" color='#000000' />
                             <Typography>Github</Typography>
@@ -26,8 +28,8 @@ const Archive = () => {
                             <li>혼자서 코딩 연습을 위해 적었던 코드</li>
                             <li>협업시 소스 코드 관리</li>
                         </div>
-                    </Box>
-                    <Box className="box">
+                    </div>
+                    <div className="box" onClick={()=>window.open(`${tistorypage}`)}>
                         <div className="icon-item">
                             <SiTistory className="icon" color='#eb531f' />
                             <Typography color='#eb531f'>Tistory</Typography>
@@ -42,7 +44,7 @@ const Archive = () => {
                             <li>취업 이후 내가 배운 것들을 다시 정리하면서 배움</li>
                             <li>지식 공유를 하면서 피드백 및 선한 영향력 행사</li>
                         </div>
-                    </Box>
+                    </div>
                 </div>
             </div>
         </section>

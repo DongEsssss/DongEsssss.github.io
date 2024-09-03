@@ -1,6 +1,6 @@
 import Start from '../start'
 // import Resume from '../resume'
-import Project from '../project'
+import Career from '../career'
 import TechStack from '../TechStack'
 import AboutME from '../aboutme';
 import Contact from '../contact';
@@ -50,7 +50,7 @@ export default function Home() {
           <TechStack />
         </div>
         <div className="snap-section fourth-snap" >
-          <Project />
+          <Career />
         </div>
         <div className="snap-section fifth-snap" >
           <Archive />

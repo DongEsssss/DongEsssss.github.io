@@ -4,13 +4,13 @@
             "name": "MySQL",
             "color": "#4479A1",
             "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/mysql.svg",
-            "description": "관계형 데이터베이스와 SQL 쿼리를 사용해 데이터 모델링과 관리에 익숙합니다."
+            "description": "MySQL을 사용해 관계형 데이터베이스 모델링과 SQL 쿼리 작업에 능숙합니다. 복잡한 데이터 구조도 체계적으로 관리할 수 있습니다."
         },
         {
             "name": "JSON",
             "color": "#ffffff",
             "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/json.svg",
-            "description": "경량 데이터 교환 형식으로, 비구조적 데이터를 직렬화하고 전송하는 데 능숙합니다."
+            "description": "JSON 형식으로 구조화되지 않은 데이터를 쉽게 직렬화하고 네트워크 상에서 효율적으로 전송하는 데 능숙합니다."
         }
     ]
 }

@@ -1,4 +1,11 @@
 .board {
+    margin: 0px auto;
+    min-height: calc(95vh - 100px) !important; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     .title {
         text-align: center;
         margin-bottom: 50px;
@@ -48,3 +55,23 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .board {   
+        ul {
+            padding: 0px 20px;   
+            li {
+
+                font-size: 3.2vw;
+            }
+        }
+    }
+    .nav-item {
+        gap: 50px;
+        .icon-item {
+            .icon {
+                font-size: 20px;
+            }
+        }
+    }
+  }

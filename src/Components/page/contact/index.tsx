@@ -14,8 +14,7 @@ const Contact = () => {
 
     return (
         <>
-            <section>
-                <div className="board">
+            <section className="board">
                     <Typography className='title' fontSize={50} fontWeight={1000}>CONTACT</Typography>
                     <ul>
                         <li>Phone : 01041485136</li>
@@ -39,7 +38,6 @@ const Contact = () => {
                             </div>
                         </div>
                     </Box>
-                </div>
             </section>
             <div className='footer'>
                 <Footer />

@@ -15,7 +15,7 @@
             border-radius: 15px;
             padding: 15px;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.01);
             }
 
@@ -58,15 +58,16 @@
 
 @media(max-width:400px) {
     .archive-section {
-        .archive-box {   
+        .archive-box {
             .box {
-                flex: 1 1 300px;
-                min-width: 300px;
+                flex: 1 1 280px;
+                min-width: 280px;
                 height: 100%;
                 width: 100%;
                 background-color: rgb(230, 230, 230);
                 border-radius: 15px;
                 padding: 15px;
+
                 .icon-item,
                 .icon-description {
                     font-size: 14px;

@@ -25,7 +25,7 @@
                 border-radius: 16px;
                 box-sizing: border-box;
                 overflow: hidden;
-                transition: height 0.7s ease;
+                transition: height 0.9s ease-in-out, box-shadow 0.3s ease-in-out;
 
                 .title {
                     display: flex;
@@ -45,13 +45,14 @@
                     white-space: normal;
                     opacity: 0;
                     overflow: hidden;
-                    transition: opacity 0.5s;
+                    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
                     transform: translateY(10px);
                 }
 
                 &:hover {
                     z-index: 10;
                     height: 170px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
                 }
 
                 &:hover .description {

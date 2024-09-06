@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import challenge_img from "../../../../asset/image/challenge.png";
-import { IoIosCloseCircleOutline } from "react-icons/io";
 
 interface DialogProps {
   open: boolean;

@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import help_img from "../../../../asset/image/help-developer.jpg";
-import { IoIosCloseCircleOutline } from "react-icons/io";
 
 interface DialogProps {
   open: boolean;

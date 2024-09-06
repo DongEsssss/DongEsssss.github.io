@@ -106,10 +106,6 @@ section {
   font-size: 4rem !important;
 }
 
-.mobile-btn {
-  display: none;
-}
-
 .dialog-img {
   max-width: 550px;
   min-width: 250px;
@@ -138,12 +134,5 @@ section {
 
   .dialog-title {
     font-size: 16px !important;
-  }
-
-  .mobile-btn {
-    margin: 20px 20px !important;
-    width: 80%;
-    display: flex;
-    justify-content: center;
   }
 }

@@ -37,18 +37,21 @@ const Intro = ({ open, onClose }: DialogProps) => {
       sx={{
         "& .MuiDialog-paper": {
           position: "absolute",
-          right: 0,
-          top: 0,
-          margin: "20px 8px",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          margin: "0px",
           maxWidth: "800px",
-          minWidth: "300px",
+          minWidth: "250px",
           width: "95%",
-          height: "95vh",
+          minHeight: "700px",
+          height: "100%",
+          maxHeight: "1000px",
           zIndex: (theme) => theme.zIndex.drawer + 1, // Ensure it's on top
           overflow: "auto", // Allow scrolling within the dialog
         },
         "& .MuiDialog-paperScrollPaper": {
-          maxHeight: "100vh", // Adjust as needed
+          maxHeight: "700px", // Adjust as needed
           overflow: "auto", // Ensure scrolling within the dialog
         },
       }}
@@ -64,13 +67,6 @@ const Intro = ({ open, onClose }: DialogProps) => {
         <DialogTitle className="dialog-title">
           임동균은 어떤 사람인가?
         </DialogTitle>
-        <Button
-          onClick={onClose}
-          sx={{ fontSize: "30px", color: "black" }}
-          className="web-btn"
-        >
-          <IoIosCloseCircleOutline />
-        </Button>
       </div>
       <DialogContent sx={{ padding: "0px 24px" }}>
         <DialogContentText id="alert-dialog-slide-description">
@@ -109,15 +105,21 @@ const Intro = ({ open, onClose }: DialogProps) => {
             것입니다.
           </Typography>
         </DialogContentText>
+        <Button
+          onClick={onClose}
+          sx={{
+            fontSize: "12px",
+            color: "white",
+            width: "100%",
+            margin: "20px 0px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+          variant="contained"
+        >
+          닫기
+        </Button>
       </DialogContent>
-      <Button
-        onClick={onClose}
-        sx={{ fontSize: "12px", color: "white" }}
-        className="mobile-btn"
-        variant="contained"
-      >
-        닫기
-      </Button>
     </Dialog>
   );
 };

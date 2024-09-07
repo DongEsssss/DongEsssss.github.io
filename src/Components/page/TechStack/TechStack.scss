@@ -21,11 +21,14 @@
                 flex-direction: column;
                 align-items: flex-start;
                 width: 100%;
-                height: 60px;
+                max-height: 60px;
+                /* height 대신 max-height 사용 */
                 border-radius: 16px;
                 box-sizing: border-box;
                 overflow: hidden;
-                transition: height 0.9s ease-in-out, box-shadow 0.3s ease-in-out;
+                transition: max-height 0.1s ease-in-out;
+                will-change: max-height, box-shadow;
+                /* 성능 최적화를 위한 will-change 추가 */
 
                 .title {
                     display: flex;
@@ -45,13 +48,14 @@
                     white-space: normal;
                     opacity: 0;
                     overflow: hidden;
-                    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+                    transition: opacity 0.3s ease-in-out;
                     transform: translateY(10px);
                 }
 
                 &:hover {
                     z-index: 10;
-                    height: 170px;
+                    max-height: 170px;
+                    /* height 대신 max-height 변경 */
                     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
                 }
 

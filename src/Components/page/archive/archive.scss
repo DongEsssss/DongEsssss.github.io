@@ -1,13 +1,12 @@
 .archive-section {
+    max-width: 1500px;
 
     .archive-box {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
         gap: 10px;
         align-items: center;
         margin-top: 50px;
-        max-width: 1500px;
 
         .box {
             min-width: 350px;
@@ -19,7 +18,7 @@
             padding: 15px;
 
             &:hover {
-                transform: scale(1.02);
+                transform: scale(1.01);
             }
 
             .icon-item,

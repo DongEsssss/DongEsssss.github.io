@@ -93,7 +93,6 @@
 
     // 창 크기가 변경될 때 별의 개수를 재조정
     function resetStars() {
-      document.body.innerHTML = ""; // 기존 별들 제거
       createStars();
       moveStars();
     }
@@ -103,7 +102,6 @@
     moveStars();
 
     // 화면 크기가 변경될 때 별의 개수를 재설정
-    window.addEventListener("resize", resetStars);
+    window.addEventListener("resize");
   </script>
-
 </html>

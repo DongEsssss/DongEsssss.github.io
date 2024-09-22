@@ -26,6 +26,8 @@ const Career = () => {
               <br />
               - 플랫폼 개발 및 유지보수
               <br />
+              - UI/UX 설계 및 개발
+              <br />
               <br />
               <span className="bold">기술 스택 </span>
               <br />

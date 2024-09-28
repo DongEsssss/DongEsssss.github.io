@@ -1,0 +1,16 @@
+{
+    "tool": [
+        {
+            "name": "Eclipse",
+            "color": "#2C2255",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/eclipseide.svg",
+            "description": "통합 개발 환경으로 Java와 같은 언어로 코드를 작성하고 디버깅할 수 있으며, Git 플러그인을 사용해 Git 리포지토리와 연동하여 효율적인 버전 관리를 수행할 수 있습니다."
+        },
+        {
+            "name": "Visual Studio Code",
+            "color": "#007ACC",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/visualstudiocode.svg",
+            "description": "가벼운 코드 편집기로 다양한 확장 프로그램을 통해 Git과 연동하여 코드 작성, 커밋, 푸시 등의 작업을 효율적으로 수행할 수 있습니다."
+        }
+    ]
+}

@@ -16,3 +16,9 @@ export interface Database {
     color: string;
     icon?: string;
 }
+export interface UseTool {
+    name: string;
+    description: string;
+    color?: string;
+    icon?: string
+}

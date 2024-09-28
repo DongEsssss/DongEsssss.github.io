@@ -67,7 +67,7 @@ const Intro = ({ open, onClose }: DialogProps) => {
           임동균은 어떤 사람인가?
         </DialogTitle>
       </div>
-      <DialogContent sx={{ padding: "0px 24px" }}>
+      <DialogContent sx={{ padding: "0px 24px" }} className="scrollbar">
         <DialogContentText id="alert-dialog-slide-description">
           <Typography
             variant="h6"

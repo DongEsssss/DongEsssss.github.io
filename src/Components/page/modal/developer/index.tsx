@@ -67,7 +67,7 @@ function MyDialog({ open, onClose }: DialogProps) {
           어떤 개발자가 되고 싶은가?
         </DialogTitle>
       </div>
-      <DialogContent sx={{ padding: "0px 24px" }}>
+      <DialogContent sx={{ padding: "0px 24px" }} className="scrollbar">
         <DialogContentText id="alert-dialog-slide-description">
           <Typography
             variant="h6"

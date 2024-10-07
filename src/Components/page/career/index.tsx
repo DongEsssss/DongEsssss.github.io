@@ -158,7 +158,8 @@ const Career = () => {
               <br />
               - 기술 스택: HTML5, SCSS, Typescript, React, REST API
               <br />
-              - 프로젝트 개요: Q 프로젝트의 소프트웨어 개발
+              - 프로젝트 개요: Q 프로젝트 : Q 프로젝트의 서비스를 이용할 수 있는
+              소프트웨어 개발
               <br />
               - 기여 사항:
               <br />
